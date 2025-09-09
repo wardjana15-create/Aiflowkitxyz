@@ -92,4 +92,75 @@
     <section>
       <h2>Why Automate YouTube to Blog Posts?</h2>
       <p>I publish 3 YouTube videos per week. Manually turning them into blog posts took me 2 hours per video — 6 hours total.</p>
-      <p>Now? It takes zero hours. Fully
+      <p>Now? It takes zero hours. Fully automated.</p>
+      <p>This workflow turns your video content into SEO-friendly blog posts — doubling your reach without doubling your work.</p>
+    </section>
+
+    <div class="tools">
+      <h3>🛠️ Tools You’ll Need</h3>
+      <ul>
+        <li><strong>Make (Free Tier)</strong> — for workflow automation</li>
+        <li><strong>Claude AI (Free Tier)</strong> — for content generation</li>
+        <li><strong>YouTube Channel</strong> — your video source</li>
+        <li><strong>WordPress (or any CMS)</strong> — for publishing</li>
+      </ul>
+      <p>All tools have free plans. No payment required.</p>
+    </div>
+
+    <div class="step">
+      <h3>Step 1: Get Your YouTube Video Transcript</h3>
+      <p>Go to your YouTube Studio → Content → Click any video → “Show more” → “Transcript”.</p>
+      <p>Click “⋮” → “Toggle timestamps” → “Copy transcript”.</p>
+      <p>Paste into a text file. This is your raw material.</p>
+    </div>
+
+    <div class="step">
+      <h3>Step 2: Send Transcript to Claude AI</h3>
+      <p>Go to <a href="https://claude.ai" target="_blank">claude.ai</a> → Start new chat.</p>
+      <p>Paste this prompt:</p>
+      <p><code>Turn this YouTube transcript into a 1,200-word blog post. Use H2 and H3 headings. Keep tone conversational. Include key takeaways at the end.</code></p>
+      <p>Paste your transcript below the prompt → Hit Enter.</p>
+      <p>Copy Claude’s output. This is your blog draft.</p>
+    </div>
+
+    <div class="step">
+      <h3>Step 3: Auto-Publish to WordPress</h3>
+      <p>In WordPress, install “WP Webhooks” plugin → Activate.</p>
+      <p>Go to WP Webhooks → Endpoints → Add new → Trigger: “Post created” → Action: “Create post”.</p>
+      <p>Copy the Webhook URL — you’ll use it in Make.</p>
+    </div>
+
+    <div class="step">
+      <h3>Step 4: Build the Make Automation</h3>
+      <p>Go to <a href="https://make.com" target="_blank">make.com</a> → Create new scenario.</p>
+      <p>Add module: “HTTP” → “Make a request” → Paste Claude’s output as “Body”.</p>
+      <p>Add module: “HTTP” → “Make a request” → Method: POST → URL: Your WordPress webhook.</p>
+      <p>Map fields: “title”, “content”, “status: publish”.</p>
+      <p>Turn on scenario. Done.</p>
+    </div>
+
+    <div class="result">
+      <h3>✅ Results After 7 Days</h3>
+      <ul>
+        <li>3 blog posts auto-published</li>
+        <li>15 hours saved</li>
+        <li>0 manual edits needed</li>
+        <li>2x traffic from SEO + video</li>
+      </ul>
+    </div>
+
+    <div class="related">
+      <h3>🔗 Related Automations</h3>
+      <ul>
+        <li><a href="/tools/ai-workflow-for-freelancers.html">Auto-Client Onboarding for Freelancers</a></li>
+        <li><a href="/comparisons/zapier-vs-make-ai.html">Zapier vs Make for AI Automation</a></li>
+        <li><a href="/resources/free-ai-automation-checklist.html">Free AI Automation Checklist</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <footer>
+    <a href="/">← Back to AIflowKit</a>
+  </footer>
+</body>
+        </html>
