@@ -1,0 +1,15 @@
+# Ads.txt for AIflowKit.xyz
+# Last Updated: 2025-08-21
+
+# Google Adsense (REQUIRED)
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# Google AdX (Future - Optional)
+# google.com, pub-0000000000000000, RESELLER, f08c47fec0942fa0
+
+# --------------------------------------------------------------------------------
+# INSTRUCTIONS:
+# 1. Replace "pub-0000000000000000" with your actual Adsense Publisher ID after approval
+# 2. Keep this file in ROOT FOLDER (https://aiflowkit.xyz/ads.txt)
+# 3. For AdX later, uncomment the AdX line and use same pub ID
+# --------------------------------------------------------------------------------
