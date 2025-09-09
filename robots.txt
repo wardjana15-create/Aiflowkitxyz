@@ -1,0 +1,18 @@
+# robots.txt for AIflowKit.xyz
+# Last Updated: 2025-08-21
+
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+Sitemap: https://aiflowkit.xyz/sitemap.xml
+
+# --------------------------------------------------------------------------------
+# INSTRUCTIONS:
+# 1. This file tells Google what to crawl
+# 2. "Allow: /" = entire site is open
+# 3. "Sitemap" = helps Google find your pages faster
+# 4. Add "Disallow" rules later if you add private folders
+# --------------------------------------------------------------------------------
