@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage - Highest Priority -->
+  <url>
+    <loc>https://aiflowkit.xyz/</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page - E-E-A-T Authority -->
+  <url>
+    <loc>https://aiflowkit.xyz/about.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Privacy Policy - Legal Requirement -->
+  <url>
+    <loc>https://aiflowkit.xyz/privacy-policy.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms of Service - Legal Requirement -->
+  <url>
+    <loc>https://aiflowkit.xyz/terms-of-service.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Contact Page - Trust Signal -->
+  <url>
+    <loc>https://aiflowkit.xyz/contact.html</loc>
+    <lastmod>2025-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
