@@ -1,7 +1,15 @@
-// _worker.js — Dynamic Menu Injector
+// _worker.js — Dynamic Menu + Domain Redirect
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+
+    // === REDIRECT .pages.dev to aiflowkit.xyz ===
+    if (url.hostname.endsWith('.pages.dev')) {
+      const newUrl = new URL(url.pathname + url.search, 'https://aiflowkit.xyz');
+      return Response.redirect(newUrl.toString(), 301);
+    }
+
+    // === INJECT MENU for .html pages ===
     if (url.pathname.endsWith('.html') || url.pathname === '/' || url.pathname.endsWith('/')) {
       const response = await fetch(request);
       const html = await response.text();
@@ -33,6 +41,8 @@ export default {
         headers: { "content-type": "text/html;charset=UTF-8" },
       });
     }
+
+    // For non-HTML files (CSS, images, etc.)
     return fetch(request);
   },
 };
